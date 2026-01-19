@@ -1,58 +1,50 @@
-#  MovieHive - Premium Movie Database App
+# 🎬 Netflix Clone (Flutter)
 
-MovieHive is a sleek, high-performance movie exploration app built with **Flutter**. It leverages the **TMDB API** to provide real-time movie data, trending content, and detailed insights with a cinematic user experience.
+![App UI 1](assets/image1.jpeg)
+![App UI 2](assets/category.jpeg)
+![App UI 3](assets/movie.jpeg)
+![App UI 4](assets/recommended.jpeg)
+![App UI 5](assets/search.jpeg)
 
-## Key Features
+A Netflix-inspired mobile application built using **Flutter**.  
+This project demonstrates clean architecture, modern state management, and efficient API handling using **TMDB API**.
 
-* **Real-time Data:** Fetches trending, popular, and top-rated movies via TMDB.
-* **Deep Details:** Comprehensive movie insights including tagline, budget, revenue, and production companies.
-* **Dynamic UI:** Uses `Sliver` widgets for smooth scrolling and complex header animations.
-* **Smart Loading:** Implements professional **Shimmer effects** to prevent layout shifts.
-* **Cast & Recommendations:** Explore movie cast details and get similar movie suggestions.
+---
 
-## Tech Stack & Architecture
+## 🚀 Features
 
-* **Framework:** [Flutter](https://flutter.dev)
-* **State Management:** [GetX](https://pub.dev/packages/getx) (Reactive approach)
-* **Architecture:** Clean Architecture (Layered: Data, Domain, Presentation)
-* **API:** [The Movie Database (TMDB)](https://www.themoviedb.org/documentation/api)
-* **Responsive UI:** `flutter_screenutil` for pixel-perfect design on all devices.
-* **Networking:** `Dio` with interceptors for robust API calls.
+- Browse trending, popular, and upcoming movies
+- Movie details with ratings and overview
+- Smooth UI animations and carousel sliders
+- Image caching for better performance
+- Offline local storage support
+- Clean and scalable MVVM architecture
 
-##  Project Structure
+---
 
-lib/
-├── core/                          
-│   ├── theme/
-│   │   └── appColors.dart
-│   ├── routes/
-│   │   └── appRoutes.dart
-│   │   └── appPages.dart
-│   ├── errors/
-│   │   └── failure.dart          # Error handling class
-│   ├── network/
-│   │   ├── api_constants.dart    # URL aur Keys yahan rahengi
-│   │   ├── dio_client.dart       # Dio Setup (Interceptor wala)
-│   │   └── api_interceptors.dart # Token inject karne k liye
-│   ├── services/
-│   │   └── storage_service.dart  # Hive Setup
-│   └── utils/
-│       └── ui_helpers.dart       # Snackbar helpers
-│
-├── features/                     # App k main features
-│   └── movies/
-│       ├── data/                 # Data Layer (Dirty Work)
-│       │   ├── datasources/      # API calls (Remote) & Hive calls (Local)
-│       │   ├── models/           # JSON/Hive Models (e.g. MovieModel)
-│       │   └── repositories/     # Repo Implementation (Either logic yahan hogi)
-│       │
-│       ├── domain/               # Domain Layer (Pure Logic - No Flutter code)
-│       │   ├── entities/         # Simple Dart Class (e.g. Movie)
-│       │   └── repositories/     # Abstract Class (Contract/Interface)
-│       │
-│       └── presentation/         # UI Layer (Visible Work)
-│           ├── controllers/      # GetX Controllers
-│           ├── pages/            # Screens (Home, Detail, Search)
-│           └── widgets/          # Small parts (MovieCard, RatingBadge)
-│
-└── main.dart                     # Entry Point
+## 🛠️ Tech Stack
+
+- **Flutter**
+- **Dart**
+- **MVVM Architecture**
+- **GetX** (State Management & Navigation)
+- **Dio** (API Networking)
+- **TMDB API**
+
+---
+
+## 📦 Packages Used
+
+```yaml
+dio: ^5.9.0
+get: ^4.7.3
+cached_network_image: ^3.4.1
+hive: ^2.2.3
+hive_flutter: ^1.1.0
+fpdart: ^1.2.0
+flutter_dotenv: ^6.0.0
+shimmer: ^3.0.0
+google_fonts: ^7.0.0
+flutter_screenutil: ^5.9.3
+carousel_slider: ^5.1.1
+intl: ^0.20.2
