@@ -1,10 +1,15 @@
 # 🎬 Netflix Clone (Flutter)
 
-![App UI 1](assets/image1.jpeg)
-![App UI 2](assets/category.jpeg)
-![App UI 3](assets/movie.jpeg)
-![App UI 4](assets/recommended.jpeg)
-![App UI 5](assets/search.jpeg)
+<p align="center">
+  <img src="assets/image1.jpeg" width="220" />
+  <img src="assets/category.jpeg" width="220" />
+  <img src="assets/movie.jpeg" width="220" />
+</p>
+
+<p align="center">
+  <img src="assets/recommended.jpeg" width="220" />
+  <img src="assets/search.jpeg" width="220" />
+</p>
 
 A Netflix-inspired mobile application built using **Flutter**.  
 This project demonstrates clean architecture, modern state management, and efficient API handling using **TMDB API**.
